@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mutual Fund Decision Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Mutual Fund Decision Platform</h1>
+    <nav>
+      <a href="pages/investor.html">Investor</a>
+      <a href="pages/advisor.html">Advisor</a>
+      <a href="pages/admin.html">Admin</a>
+      <a href="pages/analyst.html">Data Analyst</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Understand, compare, and choose the right mutual funds</h2>
+      <p>Browse sample funds, compare performance, and get educational guidance.</p>
+    </section>
+
+    <section id="funds-list-section">
+      <h3>Sample Funds</h3>
+      <div id="funds-list" class="cards"></div>
+    </section>
+
+    <section id="compare-section">
+      <h3>Compare Selected Funds (1-year returns)</h3>
+      <canvas id="compareChart" width="600" height="250"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for FEDF-PS06: Investment perception and selection behavior towards mutual funds</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

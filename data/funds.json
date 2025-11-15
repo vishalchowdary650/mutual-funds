@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fund-001",
+    "name": "Bluebridge Growth Fund",
+    "type": "Equity",
+    "description": "Large-cap growth fund focusing on technology and consumer sectors.",
+    "performance": {
+      "1y": 0.12,
+      "3y": 0.36
+    }
+  },
+  {
+    "id": "fund-002",
+    "name": "Steady Income Bond Fund",
+    "type": "Debt",
+    "description": "Conservative bond fund targeting regular income with lower volatility.",
+    "performance": {
+      "1y": 0.045,
+      "3y": 0.14
+    }
+  },
+  {
+    "id": "fund-003",
+    "name": "GreenFuture ESG Fund",
+    "type": "Equity",
+    "description": "Sustainable investments across renewable energy and clean tech.",
+    "performance": {
+      "1y": 0.185,
+      "3y": 0.52
+    }
+  },
+  {
+    "id": "fund-004",
+    "name": "Global Diversified Fund",
+    "type": "Hybrid",
+    "description": "Mix of global equities and bonds to balance growth and risk.",
+    "performance": {
+      "1y": 0.08,
+      "3y": 0.22
+    }
+  }
+]
