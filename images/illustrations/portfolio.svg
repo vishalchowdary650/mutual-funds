@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9"/>
+      <stop offset="100%" style="stop-color:#c8e6c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" rx="16" fill="url(#bgGrad2)"/>
+  <!-- Portfolio pie chart -->
+  <circle cx="120" cy="100" r="60" fill="#fff" stroke="#e0e0e0" stroke-width="2"/>
+  <path d="M120 100 L120 40 A60 60 0 0 1 171.9 130 Z" fill="#0b76ef"/>
+  <path d="M120 100 L171.9 130 A60 60 0 0 1 68.1 130 Z" fill="#4caf50"/>
+  <path d="M120 100 L68.1 130 A60 60 0 0 1 120 40 Z" fill="#ff9800"/>
+  <!-- Legend -->
+  <rect x="220" y="50" width="16" height="16" rx="3" fill="#0b76ef"/>
+  <text x="245" y="63" font-family="Inter,sans-serif" font-size="14" fill="#333">Equity 45%</text>
+  <rect x="220" y="80" width="16" height="16" rx="3" fill="#4caf50"/>
+  <text x="245" y="93" font-family="Inter,sans-serif" font-size="14" fill="#333">Bonds 35%</text>
+  <rect x="220" y="110" width="16" height="16" rx="3" fill="#ff9800"/>
+  <text x="245" y="123" font-family="Inter,sans-serif" font-size="14" fill="#333">Other 20%</text>
+  <!-- Title -->
+  <text x="220" y="165" font-family="Inter,sans-serif" font-size="12" fill="#666">Diversified Portfolio</text>
+</svg>

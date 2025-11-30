@@ -1,7 +1,65 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Admin</title><link rel="stylesheet" href="../styles.css" /></head>
-<body><header class="topbar"><h1>Admin Panel</h1><nav><a href="../index.html">Home</a></nav></header>
-<main class="container">
-  <h2>Platform management</h2>
-  <p>This starter site doesn't include authentication; for a real deployment add secure admin auth and a backend.</p>
-</main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Panel - Mutual Fund Platform</title>
+  <meta name="description" content="Platform management and administration." />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <img src="../images/logo.svg" alt="Logo" class="logo" />
+      <h1>Admin Panel</h1>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <img src="../images/icons/admin.svg" alt="" class="page-icon" />
+        <div>
+          <h2>Platform management</h2>
+          <p>Administrative tools for managing the Mutual Fund Decision Platform.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="card card-warning">
+        <h3>Security Notice</h3>
+        <p>This starter site doesn't include authentication. For a real deployment, add secure admin authentication and a backend service.</p>
+      </div>
+
+      <div class="card">
+        <h3>Admin Features</h3>
+        <ul class="tips-list">
+          <li>
+            <strong>User Management</strong>
+            <span>Manage platform users and permissions</span>
+          </li>
+          <li>
+            <strong>Content Moderation</strong>
+            <span>Review and approve advisor content</span>
+          </li>
+          <li>
+            <strong>System Configuration</strong>
+            <span>Platform settings and customization</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Admin tools - Mutual Fund Decision Platform</p>
+    </div>
+  </footer>
+</body>
+</html>

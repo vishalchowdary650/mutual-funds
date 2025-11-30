@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e5f5"/>
+      <stop offset="100%" style="stop-color:#e1bee7"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" rx="16" fill="url(#bgGrad4)"/>
+  <!-- Line chart -->
+  <polyline points="40,140 80,120 120,130 160,90 200,100 240,60 280,70 320,40 360,50"
+            stroke="#7b1fa2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="40,150 80,145 120,150 160,130 200,135 240,110 280,115 320,95 360,100"
+            stroke="#0b76ef" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Data points -->
+  <circle cx="160" cy="90" r="6" fill="#7b1fa2"/>
+  <circle cx="240" cy="60" r="6" fill="#7b1fa2"/>
+  <circle cx="320" cy="40" r="6" fill="#7b1fa2"/>
+  <!-- Legend -->
+  <line x1="40" y1="175" x2="60" y2="175" stroke="#7b1fa2" stroke-width="3"/>
+  <text x="70" y="180" font-family="Inter,sans-serif" font-size="12" fill="#333">3-Year Returns</text>
+  <line x1="180" y1="175" x2="200" y2="175" stroke="#0b76ef" stroke-width="3"/>
+  <text x="210" y="180" font-family="Inter,sans-serif" font-size="12" fill="#333">1-Year Returns</text>
+</svg>

@@ -4,39 +4,97 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mutual Fund Decision Platform</title>
+  <meta name="description" content="Understand, compare, and choose the right mutual funds. Browse sample funds, compare performance, and get educational guidance." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header class="topbar">
-    <h1>Mutual Fund Decision Platform</h1>
+    <div class="topbar-brand">
+      <img src="images/logo.svg" alt="Mutual Fund Platform Logo" class="logo" />
+      <h1>Mutual Fund Decision Platform</h1>
+    </div>
     <nav>
-      <a href="pages/investor.html">Investor</a>
-      <a href="pages/advisor.html">Advisor</a>
-      <a href="pages/admin.html">Admin</a>
-      <a href="pages/analyst.html">Data Analyst</a>
+      <a href="pages/investor.html">
+        <img src="images/icons/investor.svg" alt="" class="nav-icon" />
+        Investor
+      </a>
+      <a href="pages/advisor.html">
+        <img src="images/icons/advisor.svg" alt="" class="nav-icon" />
+        Advisor
+      </a>
+      <a href="pages/analyst.html">
+        <img src="images/icons/analyst.svg" alt="" class="nav-icon" />
+        Data Analyst
+      </a>
+      <a href="pages/admin.html">
+        <img src="images/icons/admin.svg" alt="" class="nav-icon" />
+        Admin
+      </a>
     </nav>
   </header>
 
   <main class="container">
     <section class="hero">
-      <h2>Understand, compare, and choose the right mutual funds</h2>
-      <p>Browse sample funds, compare performance, and get educational guidance.</p>
+      <div class="hero-content">
+        <h2>Understand, compare, and choose the right mutual funds</h2>
+        <p>Browse sample funds, compare performance, and get educational guidance to make informed investment decisions.</p>
+        <div class="hero-actions">
+          <a href="#funds-list-section" class="button button-primary">Browse Funds</a>
+          <a href="pages/investor.html" class="button button-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/illustrations/growth-chart.svg" alt="Investment Growth Chart" />
+      </div>
     </section>
 
-    <section id="funds-list-section">
-      <h3>Sample Funds</h3>
+    <section class="features">
+      <div class="feature-card">
+        <img src="images/illustrations/portfolio.svg" alt="Portfolio Diversification" class="feature-image" />
+        <h3>Diversified Selection</h3>
+        <p>Explore equity, debt, and hybrid funds to build a balanced portfolio that matches your goals.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/illustrations/risk-meter.svg" alt="Risk Assessment" class="feature-image" />
+        <h3>Risk Assessment</h3>
+        <p>Understand your risk tolerance and find funds that align with your investment comfort level.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/illustrations/performance.svg" alt="Performance Analysis" class="feature-image" />
+        <h3>Performance Tracking</h3>
+        <p>Compare historical returns and analyze fund performance with interactive charts.</p>
+      </div>
+    </section>
+
+    <section id="funds-list-section" class="funds-section">
+      <div class="section-header">
+        <h3>Sample Funds</h3>
+        <p>Explore our curated selection of mutual funds across different categories</p>
+      </div>
       <div id="funds-list" class="cards"></div>
     </section>
 
-    <section id="compare-section">
-      <h3>Compare Selected Funds (1-year returns)</h3>
-      <canvas id="compareChart" width="600" height="250"></canvas>
+    <section id="compare-section" class="compare-section">
+      <div class="section-header">
+        <h3>Compare Selected Funds</h3>
+        <p>View 1-year returns side by side</p>
+      </div>
+      <div class="chart-container">
+        <canvas id="compareChart" width="600" height="250"></canvas>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Built for FEDF-PS06: Investment perception and selection behavior towards mutual funds</p>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Logo" class="footer-logo" />
+        <span>Mutual Fund Decision Platform</span>
+      </div>
+      <p>Built for FEDF-PS06: Investment perception and selection behavior towards mutual funds</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
