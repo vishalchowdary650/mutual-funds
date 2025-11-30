@@ -1,44 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mutual Fund Decision Platform</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Mutual Funds — ClearView Investments</title>
+  <meta name="description" content="A clean, professional landing page for a mutual funds project. Contains fund highlights, easy-to-read cards, and performance visuals." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#0ea5a4;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --radius:14px;
+      color-scheme: dark;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#071024 0%, #071826 60%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:36px;
+    }
+
+    .container{max-width:1100px;margin:0 auto}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;
+    }
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052026;box-shadow:0 6px 18px rgba(0,0,0,0.6)
+    }
+    .brand h1{font-size:18px;margin:0}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a.cta{background:linear-gradient(90deg,var(--accent),#06b6d4);color:#023233;padding:10px 14px;border-radius:12px}
+
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:28px
+    }
+    .hero-card{background:linear-gradient(180deg,var(--glass), var(--glass-2));padding:28px;border-radius:var(--radius);box-shadow:0 6px 40px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+    .kicker{display:inline-block;background:rgba(14,165,164,0.12);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:12px}
+    h2{margin:14px 0 8px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+
+    .controls{display:flex;gap:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:12px;color:inherit;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#06b6d4);color:#022;box-shadow:0 8px 30px rgba(6,182,180,0.12)}
+
+    .hero-visual{border-radius:14px;overflow:hidden;box-shadow:0 8px 40px rgba(2,6,23,0.6)}
+    .hero-visual img{display:block;width:100%;height:100%;object-fit:cover}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+    .fund-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .fund-thumb{height:120px;border-radius:10px;margin-bottom:12px;overflow:hidden}
+    .fund-thumb img{width:100%;height:100%;object-fit:cover}
+    .fund-meta{display:flex;justify-content:space-between;align-items:center}
+    .fund-name{font-weight:700}
+    .fund-returns{font-weight:800;color:var(--accent)}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+    .chart-card{height:220px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.015),transparent);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .hero-visual{height:220px}
+      .grid-2{grid-template-columns:1fr}
+    }
+
+    /* subtle hover */
+    .fund-card:hover{transform:translateY(-6px);transition:transform 220ms cubic-bezier(.2,.9,.3,1)}
+    .btn{transition:transform 180ms ease, box-shadow 180ms ease}
+    .btn:hover{transform:translateY(-3px)}
+
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <h1>Mutual Fund Decision Platform</h1>
-    <nav>
-      <a href="pages/investor.html">Investor</a>
-      <a href="pages/advisor.html">Advisor</a>
-      <a href="pages/admin.html">Admin</a>
-      <a href="pages/analyst.html">Data Analyst</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CF</div>
+        <div>
+          <h1>ClearView Investments</h1>
+          <p>Mutual funds insights & simple dashboards</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#funds">Funds</a>
+        <a href="#insights">Insights</a>
+        <a class="cta" href="#contact">Get Started</a>
+      </nav>
+    </header>
 
-  <main class="container">
     <section class="hero">
-      <h2>Understand, compare, and choose the right mutual funds</h2>
-      <p>Browse sample funds, compare performance, and get educational guidance.</p>
+      <div class="hero-card">
+        <span class="kicker">Trusted Data · 2025</span>
+        <h2>Invest with clarity — curated mutual funds at a glance</h2>
+        <p class="lead">Visualise fund performance, compare returns, and explore risk metrics — all on a clean, responsive page.</p>
+
+        <div class="controls">
+          <button class="btn primary">Explore Funds</button>
+          <button class="btn">Compare</button>
+        </div>
+
+        <div class="cards" style="margin-top:18px">
+          <!-- example fund card -->
+          <div class="fund-card">
+            <div class="fund-thumb"><img src="https://source.unsplash.com/800x600/?money,finance" alt="Fund visual"></div>
+            <div class="fund-meta">
+              <div>
+                <div class="fund-name">Alpha Growth Fund</div>
+                <div style="color:var(--muted);font-size:13px">Large-Cap Equity</div>
+              </div>
+              <div class="fund-returns">+18.6%</div>
+            </div>
+          </div>
+
+          <div class="fund-card">
+            <div class="fund-thumb"><img src="https://source.unsplash.com/800x600/?stock,exchange" alt="Fund visual"></div>
+            <div class="fund-meta">
+              <div>
+                <div class="fund-name">Balanced Income</div>
+                <div style="color:var(--muted);font-size:13px">Hybrid</div>
+              </div>
+              <div class="fund-returns">+11.2%</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+        <img src="https://source.unsplash.com/1200x900/?investment,graphs" alt="Investment visual">
+      </div>
     </section>
 
-    <section id="funds-list-section">
-      <h3>Sample Funds</h3>
-      <div id="funds-list" class="cards"></div>
+    <section class="grid-2">
+      <div class="chart-card" id="insights">
+        <!-- placeholder for small chart or sparkline -->
+        <div>
+          <strong>Fund performance (1Y)</strong>
+          <div style="margin-top:12px;color:var(--muted)">Sparkline or chart here — replace with chart.js or lightweight svg</div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div>
+          <strong>Risk vs Return</strong>
+          <div style="margin-top:12px;color:var(--muted)">Scatter / heatmap placeholder. Use a small chart for credibility</div>
+        </div>
+      </div>
     </section>
 
-    <section id="compare-section">
-      <h3>Compare Selected Funds (1-year returns)</h3>
-      <canvas id="compareChart" width="600" height="250"></canvas>
-    </section>
-  </main>
+    <footer>
+      <div>© <!-- YEAR will be replaced automatically by JS --> <span id="yr"></span> ClearView Investments • Built with clarity</div>
+    </footer>
+  </div>
 
-  <footer>
-    <p>Built for FEDF-PS06: Investment perception and selection behavior towards mutual funds</p>
-  </footer>
+  <script>
+    // small nicety: set year & progressive image loading
+    document.getElementById('yr').textContent = new Date().getFullYear();
 
-  <script src="script.js"></script>
+    // lazy load example (modern browsers): images with data-src
+    (function(){
+      const imgs = document.querySelectorAll('img[data-src]');
+      if('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(e=>{
+            if(e.isIntersecting){
+              const img = e.target; img.src = img.dataset.src; img.removeAttribute('data-src'); io.unobserve(img);
+            }
+          })
+        });
+        imgs.forEach(i=>io.observe(i));
+      } else {
+        imgs.forEach(i=>{i.src = i.dataset.src})
+      }
+    })();
+  </script>
 </body>
 </html>
