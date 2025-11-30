@@ -1,7 +1,79 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Data Analyst</title><link rel="stylesheet" href="../styles.css" /></head>
-<body><header class="topbar"><h1>Data Analyst</h1><nav><a href="../index.html">Home</a></nav></header>
-<main class="container">
-  <h2>Analyze investment trends</h2>
-  <p>Upload performance feeds, update fund data (data/funds.json), and generate reports.</p>
-</main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data Analyst - Mutual Fund Platform</title>
+  <meta name="description" content="Analyze investment trends and manage fund data." />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <img src="../images/logo.svg" alt="Logo" class="logo" />
+      <h1>Data Analyst</h1>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <img src="../images/icons/analyst.svg" alt="" class="page-icon" />
+        <div>
+          <h2>Analyze investment trends</h2>
+          <p>Upload performance feeds, update fund data, and generate comprehensive reports for the platform.</p>
+        </div>
+      </div>
+      <img src="../images/illustrations/performance.svg" alt="Performance Analysis" class="page-hero-image" />
+    </section>
+
+    <section class="content-grid">
+      <div class="card">
+        <h3>Data Management</h3>
+        <p>Fund data is stored in <code>data/funds.json</code>. Update this file to add new funds or modify existing performance metrics.</p>
+        <div class="data-info">
+          <div class="data-stat">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Active Funds</span>
+          </div>
+          <div class="data-stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Fund Types</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-highlight">
+        <div class="card-icon">
+          <img src="../images/illustrations/growth-chart.svg" alt="Growth Chart" />
+        </div>
+        <h3>Analytics Features</h3>
+        <ul class="tips-list">
+          <li>
+            <strong>Performance Tracking</strong>
+            <span>Monitor 1-year and 3-year returns</span>
+          </li>
+          <li>
+            <strong>Fund Comparison</strong>
+            <span>Visual comparison with Chart.js</span>
+          </li>
+          <li>
+            <strong>Category Analysis</strong>
+            <span>Equity, Debt, and Hybrid breakdowns</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Analyst tools - Mutual Fund Decision Platform</p>
+    </div>
+  </footer>
+</body>
+</html>

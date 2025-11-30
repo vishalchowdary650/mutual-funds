@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0"/>
+      <stop offset="100%" style="stop-color:#ffe0b2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" rx="16" fill="url(#bgGrad3)"/>
+  <!-- Risk meter -->
+  <path d="M200 160 A80 80 0 0 1 280 80" stroke="#e0e0e0" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M200 160 A80 80 0 0 1 120 80" stroke="#e0e0e0" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M200 160 A80 80 0 0 1 145 95" stroke="#4caf50" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M145 95 A80 80 0 0 1 200 80" stroke="#ff9800" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M200 80 A80 80 0 0 1 255 95" stroke="#f44336" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <!-- Needle -->
+  <line x1="200" y1="160" x2="165" y2="105" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="200" cy="160" r="10" fill="#333"/>
+  <!-- Labels -->
+  <text x="100" y="130" font-family="Inter,sans-serif" font-size="12" fill="#4caf50">Low</text>
+  <text x="185" y="55" font-family="Inter,sans-serif" font-size="12" fill="#ff9800">Med</text>
+  <text x="275" y="130" font-family="Inter,sans-serif" font-size="12" fill="#f44336">High</text>
+  <text x="155" y="185" font-family="Inter,sans-serif" font-size="14" fill="#333" font-weight="600">Risk Assessment</text>
+</svg>

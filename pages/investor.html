@@ -1,25 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Investor - Mutual Funds</title>
-<link rel="stylesheet" href="../styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Investor Dashboard - Mutual Fund Platform</title>
+  <meta name="description" content="Educational tools and tips for mutual fund investors." />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <header class="topbar"><h1>Investor Dashboard</h1><nav><a href="../index.html">Home</a></nav></header>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <img src="../images/logo.svg" alt="Logo" class="logo" />
+      <h1>Investor Dashboard</h1>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+
   <main class="container">
-    <h2>Explore mutual funds</h2>
-    <p>Use the homepage to add funds to comparison. Here is an example quick filter and educational tips.</p>
-    <section class="card">
-      <h3>Quick Tips</h3>
-      <ul>
-        <li>Understand your risk tolerance.</li>
-        <li>Diversify across asset classes.</li>
-        <li>Check fees, performance history, and fund manager track record.</li>
-      </ul>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <img src="../images/icons/investor.svg" alt="" class="page-icon" />
+        <div>
+          <h2>Explore mutual funds</h2>
+          <p>Use the homepage to add funds to comparison. Here you'll find educational tips and resources to guide your investment journey.</p>
+        </div>
+      </div>
+      <img src="../images/illustrations/portfolio.svg" alt="Portfolio" class="page-hero-image" />
+    </section>
+
+    <section class="content-grid">
+      <div class="card card-highlight">
+        <div class="card-icon">
+          <img src="../images/illustrations/risk-meter.svg" alt="Risk Assessment" />
+        </div>
+        <h3>Quick Tips</h3>
+        <ul class="tips-list">
+          <li>
+            <strong>Understand your risk tolerance</strong>
+            <span>Know how much volatility you can handle before investing.</span>
+          </li>
+          <li>
+            <strong>Diversify across asset classes</strong>
+            <span>Don't put all your eggs in one basket - spread investments.</span>
+          </li>
+          <li>
+            <strong>Check fees and performance</strong>
+            <span>Review expense ratios, historical performance, and fund manager track record.</span>
+          </li>
+          <li>
+            <strong>Consider your investment horizon</strong>
+            <span>Match fund type to how long you plan to stay invested.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Fund Categories</h3>
+        <div class="category-list">
+          <div class="category-item">
+            <img src="../images/icons/equity.svg" alt="" class="category-icon" />
+            <div>
+              <strong>Equity Funds</strong>
+              <span>Higher risk, higher potential returns</span>
+            </div>
+          </div>
+          <div class="category-item">
+            <img src="../images/icons/debt.svg" alt="" class="category-icon" />
+            <div>
+              <strong>Debt Funds</strong>
+              <span>Lower risk, stable income</span>
+            </div>
+          </div>
+          <div class="category-item">
+            <img src="../images/icons/hybrid.svg" alt="" class="category-icon" />
+            <div>
+              <strong>Hybrid Funds</strong>
+              <span>Balanced risk-return profile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h3>Ready to compare funds?</h3>
+      <p>Head back to the homepage to explore and compare mutual funds.</p>
+      <a href="../index.html" class="button button-primary">Browse Funds</a>
     </section>
   </main>
-  <footer>Investor tools coming soon.</footer>
+
+  <footer>
+    <div class="footer-content">
+      <p>Investor tools - Mutual Fund Decision Platform</p>
+    </div>
+  </footer>
 </body>
 </html>
