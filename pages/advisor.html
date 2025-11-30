@@ -1,8 +1,105 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Advisor</title><link rel="stylesheet" href="../styles.css" /></head>
-<body><header class="topbar"><h1>Financial Advisor</h1><nav><a href="../index.html">Home</a></nav></header>
-<main class="container">
-  <h2>Advisor Tools</h2>
-  <p>Create educational content, provide investment advice, and help users select funds.</p>
-  <section class="card"><h3>Content Ideas</h3><ol><li>How to read a fund fact sheet</li><li>Building a diversified portfolio</li><li>Risk management strategies</li></ol></section>
-</main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Financial Advisor Tools - Create educational content and provide investment guidance" />
+  <title>Financial Advisor - Mutual Fund Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Financial Advisor</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="investor.html">Investor</a>
+      <a href="admin.html">Admin</a>
+      <a href="analyst.html">Analyst</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-hero" style="background:linear-gradient(135deg, rgba(180,83,9,0.9), rgba(245,158,11,0.85)), url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=1200&q=80') center/cover;">
+      <h2>Advisor Resources</h2>
+      <p>Tools and content to help guide your clients toward informed investment decisions</p>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #b45309, #f59e0b); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">50+</div>
+        <div class="stat-label">Content Templates</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #b45309, #f59e0b); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">100%</div>
+        <div class="stat-label">Client Focus</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #b45309, #f59e0b); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Expert</div>
+        <div class="stat-label">Guidance</div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Fund Fact Sheets" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Fund Fact Sheets</h4>
+          <p>Help clients understand key metrics, holdings, and performance data in fund documentation.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80" alt="Portfolio Building" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Portfolio Construction</h4>
+          <p>Guide clients through building diversified portfolios aligned with their goals and risk tolerance.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Risk Management" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Risk Management</h4>
+          <p>Educate clients on risk assessment, mitigation strategies, and market volatility.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:40px;">
+      <h3 style="margin-bottom:20px;">Content Ideas for Clients</h3>
+      <div style="display:grid; gap:16px;">
+        <div style="display:flex; align-items:flex-start; gap:16px; padding:20px; background:#fffbeb; border-radius:12px; border-left:4px solid #f59e0b;">
+          <span style="font-size:28px;">📊</span>
+          <div>
+            <strong style="color:#1e293b; font-size:16px;">How to Read a Fund Fact Sheet</strong>
+            <p style="color:#64748b; margin:6px 0 0 0; font-size:14px;">Break down expense ratios, NAV, AUM, and performance metrics in simple terms your clients can understand.</p>
+          </div>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:16px; padding:20px; background:#fffbeb; border-radius:12px; border-left:4px solid #f59e0b;">
+          <span style="font-size:28px;">🎯</span>
+          <div>
+            <strong style="color:#1e293b; font-size:16px;">Building a Diversified Portfolio</strong>
+            <p style="color:#64748b; margin:6px 0 0 0; font-size:14px;">Explain asset allocation strategies, rebalancing, and how diversification reduces overall portfolio risk.</p>
+          </div>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:16px; padding:20px; background:#fffbeb; border-radius:12px; border-left:4px solid #f59e0b;">
+          <span style="font-size:28px;">⚖️</span>
+          <div>
+            <strong style="color:#1e293b; font-size:16px;">Risk Management Strategies</strong>
+            <p style="color:#64748b; margin:6px 0 0 0; font-size:14px;">Cover hedging techniques, stop-loss approaches, and how to weather market downturns with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="../index.html" class="button">View All Funds</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Providing financial advisors with the tools to better serve their clients.</p>
+  </footer>
+</body>
+</html>
