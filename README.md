@@ -1,3 +1,4 @@
+[readme.md](https://github.com/user-attachments/files/23837104/readme.md)
 # Mutual Fund Decision Platform (Starter)
 
 This is a starter static website for the FEDF-PS06 project: *Investment perception and selection behavior towards mutual funds*.
