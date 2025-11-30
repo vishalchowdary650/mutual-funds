@@ -1,7 +1,87 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Admin</title><link rel="stylesheet" href="../styles.css" /></head>
-<body><header class="topbar"><h1>Admin Panel</h1><nav><a href="../index.html">Home</a></nav></header>
-<main class="container">
-  <h2>Platform management</h2>
-  <p>This starter site doesn't include authentication; for a real deployment add secure admin auth and a backend.</p>
-</main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Admin Panel - Platform management for mutual fund administrators" />
+  <title>Admin Panel - Mutual Fund Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Admin Panel</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="investor.html">Investor</a>
+      <a href="advisor.html">Advisor</a>
+      <a href="analyst.html">Analyst</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-hero" style="background:linear-gradient(135deg, rgba(127,29,29,0.9), rgba(220,38,38,0.85)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80') center/cover;">
+      <h2>Platform Management</h2>
+      <p>Administrative tools for managing users, funds, and platform settings</p>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #991b1b, #dc2626); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Secure</div>
+        <div class="stat-label">Access Control</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #991b1b, #dc2626); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Real-time</div>
+        <div class="stat-label">Monitoring</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #991b1b, #dc2626); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Full</div>
+        <div class="stat-label">Control</div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80" alt="User Management" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>User Management</h4>
+          <p>Manage user accounts, roles, and permissions across the platform.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Fund Administration" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Fund Administration</h4>
+          <p>Add, update, and manage mutual fund listings and their data.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80" alt="System Settings" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>System Settings</h4>
+          <p>Configure platform settings, integrations, and security policies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:40px;">
+      <h3 style="margin-bottom:20px;">Admin Notice</h3>
+      <div style="padding:24px; background:linear-gradient(135deg, #fef2f2, #fee2e2); border-radius:12px; border-left:4px solid #dc2626;">
+        <p style="color:#991b1b; margin:0; font-size:15px; line-height:1.7;">
+          <strong>Security Note:</strong> This is a demo platform. For production deployment, implement secure authentication (OAuth, JWT, or session-based), role-based access control, and a secure backend API. Never expose sensitive administrative functions without proper authorization.
+        </p>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="../index.html" class="button">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Secure platform administration for mutual fund management.</p>
+  </footer>
+</body>
+</html>

@@ -1,25 +1,100 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Investor - Mutual Funds</title>
-<link rel="stylesheet" href="../styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Investor Dashboard - Explore mutual funds and get investment guidance" />
+  <title>Investor Dashboard - Mutual Fund Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <header class="topbar"><h1>Investor Dashboard</h1><nav><a href="../index.html">Home</a></nav></header>
+  <header class="topbar">
+    <h1>Investor Dashboard</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="advisor.html">Advisor</a>
+      <a href="admin.html">Admin</a>
+      <a href="analyst.html">Analyst</a>
+    </nav>
+  </header>
+
   <main class="container">
-    <h2>Explore mutual funds</h2>
-    <p>Use the homepage to add funds to comparison. Here is an example quick filter and educational tips.</p>
-    <section class="card">
-      <h3>Quick Tips</h3>
-      <ul>
-        <li>Understand your risk tolerance.</li>
-        <li>Diversify across asset classes.</li>
-        <li>Check fees, performance history, and fund manager track record.</li>
+    <section class="page-hero" style="background:linear-gradient(135deg, rgba(21,128,61,0.9), rgba(34,197,94,0.85)), url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1200&q=80') center/cover;">
+      <h2>Your Investment Journey</h2>
+      <p>Explore mutual funds and build a portfolio aligned with your financial goals</p>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #15803d, #22c55e); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">10+</div>
+        <div class="stat-label">Fund Categories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #15803d, #22c55e); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">24/7</div>
+        <div class="stat-label">Access</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="background:linear-gradient(135deg, #15803d, #22c55e); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Free</div>
+        <div class="stat-label">Resources</div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=600&q=80" alt="Risk Assessment" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Understand Your Risk</h4>
+          <p>Learn about risk tolerance and how it affects your investment choices.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=600&q=80" alt="Portfolio Diversification" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Diversify Wisely</h4>
+          <p>Spread investments across asset classes to balance risk and returns.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Fund Analysis" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Analyze Performance</h4>
+          <p>Check fees, historical returns, and fund manager track records.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:40px;">
+      <h3 style="margin-bottom:20px;">Quick Investment Tips</h3>
+      <ul style="list-style:none; padding:0;">
+        <li style="padding:12px 0; border-bottom:1px solid #e2e8f0; display:flex; align-items:center; gap:12px;">
+          <span style="background:#dcfce7; color:#15803d; padding:8px 12px; border-radius:8px; font-weight:600;">1</span>
+          <span>Understand your risk tolerance before selecting funds</span>
+        </li>
+        <li style="padding:12px 0; border-bottom:1px solid #e2e8f0; display:flex; align-items:center; gap:12px;">
+          <span style="background:#dcfce7; color:#15803d; padding:8px 12px; border-radius:8px; font-weight:600;">2</span>
+          <span>Diversify across asset classes for balanced growth</span>
+        </li>
+        <li style="padding:12px 0; border-bottom:1px solid #e2e8f0; display:flex; align-items:center; gap:12px;">
+          <span style="background:#dcfce7; color:#15803d; padding:8px 12px; border-radius:8px; font-weight:600;">3</span>
+          <span>Review expense ratios and management fees carefully</span>
+        </li>
+        <li style="padding:12px 0; display:flex; align-items:center; gap:12px;">
+          <span style="background:#dcfce7; color:#15803d; padding:8px 12px; border-radius:8px; font-weight:600;">4</span>
+          <span>Consider long-term performance over short-term gains</span>
+        </li>
       </ul>
     </section>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="../index.html" class="button">Explore Funds</a>
+    </div>
   </main>
-  <footer>Investor tools coming soon.</footer>
+
+  <footer>
+    <p>Empowering investors with knowledge and tools for better financial decisions.</p>
+  </footer>
 </body>
 </html>
