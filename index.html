@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Mutual Fund Decision Platform - Understand, compare, and choose the right mutual funds with educational guidance and performance insights." />
   <title>Mutual Fund Decision Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header class="topbar">
-    <h1>Mutual Fund Decision Platform</h1>
+    <h1>Mutual Fund Platform</h1>
     <nav>
       <a href="pages/investor.html">Investor</a>
       <a href="pages/advisor.html">Advisor</a>
@@ -20,8 +24,51 @@
 
   <main class="container">
     <section class="hero">
-      <h2>Understand, compare, and choose the right mutual funds</h2>
-      <p>Browse sample funds, compare performance, and get educational guidance.</p>
+      <h2>Smart Investing Starts Here</h2>
+      <p>Compare mutual funds, analyze performance trends, and make informed investment decisions with our comprehensive decision platform.</p>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Sample Funds</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4</div>
+        <div class="stat-label">User Roles</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3Y</div>
+        <div class="stat-label">Performance Data</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Educational Focus</div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&q=80" alt="Investment Growth Chart" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Track Performance</h4>
+          <p>Monitor 1-year and 3-year returns across multiple fund categories including equity, debt, and hybrid funds.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" alt="Financial Analysis" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Compare Funds</h4>
+          <p>Side-by-side comparison tools help you evaluate and select the best performing funds for your portfolio.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=600&q=80" alt="Educational Resources" loading="lazy" />
+        <div class="feature-card-content">
+          <h4>Learn & Grow</h4>
+          <p>Educational resources and investment tips designed for both beginners and experienced investors.</p>
+        </div>
+      </div>
     </section>
 
     <section id="funds-list-section">
@@ -30,13 +77,14 @@
     </section>
 
     <section id="compare-section">
-      <h3>Compare Selected Funds (1-year returns)</h3>
-      <canvas id="compareChart" width="600" height="250"></canvas>
+      <h3>Compare Selected Funds</h3>
+      <p style="color:#64748b; margin-bottom:24px;">Click "Compare" on any fund cards above to add them to the comparison chart below.</p>
+      <canvas id="compareChart" width="600" height="300"></canvas>
     </section>
   </main>
 
   <footer>
-    <p>Built for FEDF-PS06: Investment perception and selection behavior towards mutual funds</p>
+    <p>Built for FEDF-PS06: Investment perception and selection behavior towards mutual funds. Helping investors make informed decisions through data-driven insights and educational guidance.</p>
   </footer>
 
   <script src="script.js"></script>
